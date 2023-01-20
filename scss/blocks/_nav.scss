@@ -1,0 +1,50 @@
+.nav {
+  background-color: #0D0D0D;
+  padding: 30px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    
+  }
+
+  
+  &__menu {
+    display: flex;
+    font-size: 18px;
+    justify-content: space-between;
+    align-items: center;
+    color: $c-white;
+
+    a {
+
+      &:not(:last-of-type) {
+        margin-right: 48px;
+      }
+    }
+  }
+  
+  &__button {
+    padding: 20px 48px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background: $c-primary;
+    border-radius: 10px;
+    color: #1C1D28;
+    width: max-content;
+    font-size: 16px;
+  }
+
+  &__logo {
+    margin-right: 160px;
+  }
+
+ 
+
+
+}

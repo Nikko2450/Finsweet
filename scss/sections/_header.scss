@@ -1,0 +1,44 @@
+.header {
+  position: relative;
+  padding: 175px 0;
+  background-image: url("../img/header/header-img-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+  
+  &__container {
+  }
+
+
+  &__desc {
+    color: $c-white;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &__title {
+    margin-bottom: 160px;
+    color: $c-white;
+    font-size: 64px;
+    line-height: 82px;  
+  }
+
+  &__subtitle {
+    margin-bottom: 16px;
+    color: $c-white;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  &__button {
+    padding: 24px 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: $c-primary;
+    border-radius: 10px;
+    color: #1C1D28;
+    width: max-content;
+    font-size: 16px;
+  }
+}

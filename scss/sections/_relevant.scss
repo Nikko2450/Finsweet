@@ -1,0 +1,27 @@
+.relavant {
+  padding: 128px 0;
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+  }
+
+  &__text {
+    text-align: center;
+  }
+
+  &__subtitle {
+    text-align: center;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 48px;
+    line-height: 64px;
+  }
+
+
+}

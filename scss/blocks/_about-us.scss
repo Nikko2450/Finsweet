@@ -1,0 +1,17 @@
+.about-us {
+  display: flex;
+  flex-direction: column;
+  width:calc(100% / 3 - 48px / 3);
+  background: #FFF5EB;
+
+  &__title {
+    font-size: 32px;
+    line-height: 44px;
+    color: #161722;
+  }
+
+  &__intro {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
