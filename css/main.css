@@ -63,6 +63,7 @@ ul, ol {
 .nav__container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .nav__menu {
   display: flex;
@@ -76,9 +77,6 @@ ul, ol {
 }
 .nav__button {
   padding: 20px 48px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
   background: #FFD2A4;
   border-radius: 10px;
   color: #1C1D28;
@@ -87,20 +85,42 @@ ul, ol {
   width: max-content;
   font-size: 16px;
 }
-.nav__logo {
-  margin-right: 160px;
-}
-
 .about-us {
+  padding: 80px;
   display: flex;
   flex-direction: column;
   width: calc(33.3333333333% - 16px);
   background: #FFF5EB;
+  position: relative;
+}
+.about-us::after {
+  content: "";
+  background: #FFD2A4;
+  height: 16px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.about-us:not(:last-of-type) {
+  margin-right: 25px;
+}
+.about-us__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+  background-color: #FFD2A4;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  margin-bottom: 20px;
 }
 .about-us__title {
   font-size: 32px;
   line-height: 44px;
   color: #161722;
+  margin-bottom: 8px;
 }
 .about-us__intro {
   font-size: 16px;
@@ -119,6 +139,18 @@ ul, ol {
   color: #FFFFFF;
   font-size: 16px;
   line-height: 24px;
+  position: relative;
+  padding-left: 40px;
+}
+.header__desc::after {
+  content: "";
+  background: #FFD2A4;
+  height: 3px;
+  width: 20px;
+  position: absolute;
+  bottom: 50%;
+  left: 10px;
+  z-index: 2;
 }
 .header__title {
   margin-bottom: 160px;
@@ -144,28 +176,32 @@ ul, ol {
   width: -moz-max-content;
   width: max-content;
   font-size: 16px;
+  margin-bottom: 7px;
 }
 
-.relavant {
+.relevant {
   padding: 128px 0;
 }
-.relavant__container {
+.relevant__container {
   display: flex;
   flex-wrap: wrap;
   position: relative;
 }
-.relavant__text {
+.relevant__text {
   text-align: center;
 }
-.relavant__subtitle {
-  text-align: center;
+.relevant__subtitle {
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 19px;
 }
-.relavant__title {
-  text-align: center;
+.relevant__title {
+  margin-bottom: 64px;
   font-size: 48px;
   line-height: 64px;
+}
+.relevant__wrapper {
+  display: flex;
 }
 
 .love {
@@ -187,6 +223,28 @@ ul, ol {
   font-size: 16px;
   line-height: 24px;
 }
+.love__images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .love__img {
   border-radius: 20px;
+}
+.love__img:not(:last-of-type) {
+  margin-right: 25px;
+}
+
+.benefits {
+  padding: 128px 0;
+}
+.benefits__subtitle {
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+}
+.benefits__title {
+  font-size: 48px;
+  line-height: 64px;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */
