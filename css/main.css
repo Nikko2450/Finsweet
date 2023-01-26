@@ -127,6 +127,17 @@ ul, ol {
   line-height: 24px;
 }
 
+.sermon__title {
+  color: #FFFFFF;
+  font-size: 24px;
+  line-height: 28px;
+}
+.sermon__desc {
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
 .header {
   position: relative;
   padding: 175px 0;
@@ -237,6 +248,9 @@ ul, ol {
 
 .benefits {
   padding: 128px 0;
+}
+.benefits__container {
+  background-color: #F5F2F0;
 }
 .benefits__subtitle {
   font-size: 16px;
