@@ -34,10 +34,12 @@
   }
 
   &__title {
+    font-weight: 700;
     font-size: 32px;
     line-height: 44px;
     color: #161722;
     margin-bottom: 8px;
+    text-transform: uppercase;
   }
 
   &__intro {

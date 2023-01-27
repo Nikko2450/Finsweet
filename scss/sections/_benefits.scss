@@ -1,19 +1,25 @@
 .benefits {
   padding: 128px 0;
+  background-color: #F5F2F0;
 
-  &__container {
-    background-color: #F5F2F0;
+  &__wrapper {
+    display: flex;
   }
 
   &__subtitle {
     font-size: 16px;
     line-height: 19px;
     text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
   }
 
   &__title {
+    font-weight: 700;
     font-size: 48px;
     line-height: 64px;
     text-align: center;
+    margin-bottom: 64px;
+    text-transform: uppercase;
   }
 }
