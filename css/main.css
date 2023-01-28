@@ -58,7 +58,7 @@ ul, ol {
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 1;
+  z-index: 3;
   text-transform: uppercase;
 }
 .nav__container {
@@ -86,6 +86,22 @@ ul, ol {
   width: max-content;
   font-size: 16px;
 }
+.nav__logo {
+  position: relative;
+}
+.nav__logo::after {
+  content: "";
+  background: #FFFFFF;
+  height: 2px;
+  width: 120px;
+  position: absolute;
+  bottom: 50%;
+  left: 250px;
+  z-index: 2;
+  transform: translate(-50%, -50%) rotate(90deg);
+  opacity: 0.1;
+}
+
 .about-us {
   padding: 80px;
   display: flex;
@@ -175,6 +191,84 @@ ul, ol {
   font-size: 16px;
   line-height: 24px;
   color: #FFFFFF;
+}
+
+.watch {
+  padding: 60px 90px;
+  background: #FFF5EB;
+  width: 40%;
+  position: relative;
+}
+.watch__subtitle {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  background: linear-gradient(109.61deg, #A54E2B -53.83%, #DC9853 62.61%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 16px;
+}
+.watch__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #161722;
+  margin-bottom: 16px;
+}
+.watch__desc {
+  font-size: 16px;
+  line-height: 24px;
+  color: #161722;
+  opacity: 0.78;
+  margin-bottom: 32px;
+}
+.watch__place {
+  display: flex;
+}
+.watch__place:not(:last-of-type) {
+  margin-bottom: 16px;
+}
+.watch__icon {
+  margin-right: 16px;
+}
+.watch__button {
+  padding: 24px 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #161722;
+  border-radius: 10px;
+  color: #FFD2A4;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font-size: 16px;
+  margin-bottom: 7px;
+  text-transform: uppercase;
+  margin-top: 32px;
+}
+.watch__img {
+  width: 60%;
+}
+.watch__date {
+  position: absolute;
+  left: 400px;
+  right: 0;
+  bottom: 400px;
+}
+.watch__numeric {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #161722;
+}
+.watch__month {
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #161722;
 }
 
 .header {
@@ -313,4 +407,31 @@ ul, ol {
   text-align: center;
   margin-bottom: 64px;
   text-transform: uppercase;
+}
+
+.join {
+  padding: 97px 0 67px;
+}
+.join__subtitle {
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 16px;
+}
+.join__title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 64px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 64px;
+}
+.join__wrapper {
+  display: flex;
+}
+.join__link {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 48px;
 }/*# sourceMappingURL=main.css.map */
