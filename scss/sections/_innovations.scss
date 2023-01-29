@@ -1,0 +1,25 @@
+.innovations {
+  padding: 67px 0;
+
+  &__subtitle {
+    text-align: center;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #161722;
+  }
+
+  &__title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 64px;
+    text-transform: uppercase;
+    color: #161722;
+    margin-bottom: 64px;
+  }
+
+  &__wrapper {
+    display: flex;
+  }
+}
