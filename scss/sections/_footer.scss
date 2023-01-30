@@ -1,0 +1,115 @@
+.footer {
+  padding: 64px 0 72px;
+  background: #161722;
+
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__subtitle {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+  }
+
+  &__logo {
+    margin-bottom: 28px;
+  }
+  
+  &__intro {
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    width: 30%;
+
+    p {
+      margin-bottom: 32px;
+    }
+
+    a {
+      &:not(:last-of-type) {
+        margin-bottom: 16px;
+      }
+    }
+  }
+
+  &__icons {
+
+    img {
+
+      &:not(:last-of-type) {
+        margin-right: 20px;
+      }
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    width: 70%;
+    margin-bottom: 32px;
+
+  }
+
+  &__button {
+    padding: 24px 64px;
+    background:$c-primary;
+    border-radius: 10px;
+    color: #1C1D28;
+    width: max-content;
+    font-size: 16px;
+    text-transform: uppercase;
+    z-index: 2;
+  }
+
+
+  &__email {
+    display: flex;
+    position: relative;
+
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 12px;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 1;
+    }
+    
+    input {
+      color: #FFFFFF;
+      width: 100%;
+      outline: 0;
+      background-color: transparent;
+      border: 0;
+      padding: 20px;
+      z-index: 2;
+      font-size: 16px;
+      line-height: 24px;
+
+      &::placeholder {
+        font-size: 16px;
+        line-height: 24px;
+        color: rgba($c-white, 0.8);
+      }
+    }
+  }
+
+  &__registration {
+    width: 44%;
+  }
+  
+   
+}  

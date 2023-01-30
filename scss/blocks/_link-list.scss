@@ -1,0 +1,15 @@
+.link-list {
+
+
+  &__item {
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    opacity: 0.78;
+
+    &:not(:last-of-type) {
+      margin-bottom: 24px;
+    }
+  }
+}
