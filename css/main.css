@@ -345,7 +345,6 @@ ul, ol {
 .header {
   position: relative;
   padding: 175px 0;
-  background-image: url("../img/header/header-img-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 80vh;
@@ -698,4 +697,26 @@ ul, ol {
 }
 .footer__registration {
   width: 44%;
+}
+
+.page-header {
+  margin-top: 80px;
+  padding: 160px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.page-header__subtitle {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #161722;
+  margin-bottom: 16px;
+}
+.page-header__title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 64px;
+  text-transform: uppercase;
+  color: #161722;
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,24 @@
+.page-header {
+  margin-top: 80px;
+  padding: 160px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+  &__subtitle {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #161722;
+    margin-bottom: 16px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 64px;
+    text-transform: uppercase;
+    color: #161722;
+  }
+}
