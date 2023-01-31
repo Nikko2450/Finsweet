@@ -452,6 +452,10 @@ ul, ol {
 .love__img:not(:last-of-type) {
   margin-right: 25px;
 }
+.love__wrapper {
+  display: flex;
+  justify-content: center;
+}
 
 .benefits {
   padding: 128px 0;
@@ -719,4 +723,33 @@ ul, ol {
   line-height: 64px;
   text-transform: uppercase;
   color: #161722;
+}
+
+.mission {
+  margin-top: 64px;
+  width: 30%;
+}
+.mission:not(:last-of-type) {
+  margin-right: 25px;
+}
+.mission__subtitle {
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #161722;
+  margin-bottom: 16px;
+}
+.mission__title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  text-transform: uppercase;
+  color: #161722;
+  margin-bottom: 16px;
+}
+.mission__desc {
+  font-size: 16px;
+  line-height: 24px;
+  color: #161722;
+  opacity: 0.78;
 }/*# sourceMappingURL=main.css.map */
