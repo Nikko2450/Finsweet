@@ -1,0 +1,27 @@
+.team {
+  padding-bottom: 128px;
+
+
+  &__subtitle {
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #161722;
+    text-align: center;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 64px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #161722;
+    margin-bottom: 64px;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}

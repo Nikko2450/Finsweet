@@ -725,6 +725,49 @@ ul, ol {
   color: #161722;
 }
 
+.advantage {
+  padding-bottom: 128px;
+}
+.advantage__subtitle {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #161722;
+}
+.advantage__title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 64px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #161722;
+  margin-bottom: 64px;
+}
+
+.team {
+  padding-bottom: 128px;
+}
+.team__subtitle {
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #161722;
+  text-align: center;
+}
+.team__title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 64px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #161722;
+  margin-bottom: 64px;
+}
+.team__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
 .mission {
   margin-top: 64px;
   width: 30%;
@@ -752,4 +795,67 @@ ul, ol {
   line-height: 24px;
   color: #161722;
   opacity: 0.78;
+}
+
+.find {
+  display: flex;
+  align-items: center;
+}
+.find:not(:last-of-type) {
+  margin-bottom: 96px;
+}
+.find__title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  text-transform: uppercase;
+  color: #161722;
+  margin-bottom: 16px;
+}
+.find__desc {
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(22, 23, 34, 0.78);
+}
+.find__text {
+  margin-right: 24px;
+  margin-left: 48px;
+}
+
+.hero {
+  background: #F5F2F0;
+  padding: 48px 75px;
+  width: calc(25% - 24px);
+}
+.hero:not(:last-of-type) {
+  margin-right: 24px;
+}
+.hero__img {
+  border-radius: 50%;
+  margin-bottom: 26px;
+}
+.hero__name {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #161722;
+  text-align: center;
+  margin-bottom: 8px;
+}
+.hero__position {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #161722;
+  opacity: 0.7;
+  text-align: center;
+  margin-bottom: 16px;
+}
+.hero__icons {
+  display: flex;
+  justify-content: center;
+}
+.hero__icons img:not(:last-of-type) {
+  margin-right: 20px;
 }/*# sourceMappingURL=main.css.map */
