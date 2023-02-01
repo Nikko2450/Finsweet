@@ -1,0 +1,17 @@
+.view {
+  padding: 128px 0;
+
+  &__title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 64px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #161722;
+    margin-bottom: 64px;
+  }
+
+  &__wrapper {
+    display: flex;
+  }
+}
