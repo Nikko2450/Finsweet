@@ -1,7 +1,7 @@
 .sermon {
   display: flex;
   flex-direction: column;
-  width:calc(100% / 4 - 72px / 3);
+  width:calc(100% / 4 - 72px / 4);
   position: relative;
   overflow: hidden;
   $this: &;

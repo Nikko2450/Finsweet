@@ -1,7 +1,7 @@
 .hero {
   background: #F5F2F0;
-  padding: 48px 75px;
-  width:calc(100% / 4 - 72px / 3);
+  padding: 48px 10px;
+  width:calc(100% / 4 - 72px / 4);
 
   &:not(:last-of-type) {
     margin-right: 24px;
@@ -10,7 +10,9 @@
 
   &__img {
     border-radius: 50%;
-    margin-bottom: 26px;
+    display: block;
+    margin: 0 auto 26px;
+    border: 8px solid $c-white;
   }
 
   &__name {
@@ -38,7 +40,7 @@
     display: flex;
     justify-content: center;
 
-    img {
+    a {
       &:not(:last-of-type) {
         margin-right: 20px;
       }  

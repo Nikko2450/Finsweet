@@ -1,9 +1,11 @@
 .header {
+  margin-top: 119px;
   position: relative;
-  padding: 175px 0;
+  padding: 57px 0 128px;
   background-repeat: no-repeat;
   background-size: cover;
   height: 80vh;
+  max-height: 663px;
   
 
 
@@ -13,6 +15,7 @@
     line-height: 24px;
     position: relative;
     padding-left: 40px;
+    margin-top: auto;
 
     &::after {
       content: "";
@@ -27,7 +30,6 @@
   }
 
   &__title {
-    margin-bottom: 160px;
     color: $c-white;
     font-weight: 700;
     font-size: 64px;
@@ -52,5 +54,15 @@
     font-size: 16px;
     margin-bottom: 7px;
     text-transform: uppercase;
+  }
+
+  &__container {
+    height: 100%;
+  }
+
+  &__text {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
   }
 }

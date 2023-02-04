@@ -24,23 +24,13 @@
     line-height: 14px;
     text-transform: uppercase;
     color: #FFFFFF;
-    width: 30%;
-
-    p {
-      margin-bottom: 32px;
-    }
-
-    a {
-      &:not(:last-of-type) {
-        margin-bottom: 16px;
-      }
-    }
+    width: 30%;   
   }
 
   &__icons {
+    display: flex;
 
-    img {
-
+    a {
       &:not(:last-of-type) {
         margin-right: 20px;
       }
@@ -67,6 +57,8 @@
     font-size: 16px;
     text-transform: uppercase;
     z-index: 2;
+    border: 0;
+    cursor: pointer;
   }
 
 
@@ -111,5 +103,13 @@
     width: 44%;
   }
   
-   
+  &__copyright {
+    margin-bottom: 32px;
+  }
+
+  &__contact-info {
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  } 
 }  

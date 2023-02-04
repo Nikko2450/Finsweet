@@ -25,6 +25,10 @@
   &__link {
     display: flex;
     justify-content:flex-end;
-    margin-top: 48px; 
+    margin-top: 48px;
+    
+    img {
+      margin-left: 11px;
+    }
   }
 }
