@@ -54,6 +54,10 @@
     font-size: 16px;
     margin-bottom: 7px;
     text-transform: uppercase;
+
+    &:hover {
+      background: #F2C79B;
+    }
   }
 
   &__container {

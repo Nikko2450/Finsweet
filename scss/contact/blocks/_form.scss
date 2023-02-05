@@ -36,6 +36,10 @@
     border: 0;
     display: block;
     cursor: pointer;
+
+    &:hover {
+      background: #F2C79B;
+    }
   }
 
 }

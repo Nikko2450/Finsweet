@@ -59,6 +59,10 @@
     z-index: 2;
     border: 0;
     cursor: pointer;
+
+    &:hover {
+      background: #F2C79B;
+    }
   }
 
 
