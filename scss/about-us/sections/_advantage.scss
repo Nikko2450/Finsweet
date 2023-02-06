@@ -11,11 +11,15 @@
   &__title {
     font-weight: 700;
     font-size: 48px;
-    line-height: 64px;
+    line-height: 142%;
     text-align: center;
     text-transform: uppercase;
     color: #161722;
     margin-bottom: 64px;
+
+    @media(max-width:$xs) {
+      font-size: 35px;
+    }
   }
 
   

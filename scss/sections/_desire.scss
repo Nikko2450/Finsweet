@@ -20,7 +20,7 @@
 
   &__button {
     padding: 24px 64px;
-    background: $c-primary;
+    background-color: $c-primary;
     border-radius: 10px;
     color: #1C1D28;
     width: max-content;
@@ -30,19 +30,33 @@
     z-index: 1;
     margin-bottom: 30px;
     margin-left: 60px;
+    transition: background-color 300ms ease-in-out;
 
     &:hover {
-      background: #F2C79B;
+      background-color: #F2C79B;
+    }
+
+    @media (max-width:$sm) {
+     font-size: 14px;
+     padding: 20px 50px; 
     }
   }
 
   &__title {
     font-weight: 700;
     font-size: 48px;
-    line-height: 64px;
+    line-height: 133%;
     text-transform: uppercase;
     color: #161722;
     margin-bottom: 16px;
+
+    @media (max-width:$md) {
+      font-size: 45px;
+    }
+
+    @media (max-width:$sm) {
+      font-size: 25px;
+    }
   }
 
   &__desc {
@@ -50,6 +64,10 @@
     line-height: 24px;
     color: #161722;
     opacity: 0.78;
+
+    @media (max-width:$sm) {
+     font-size: 14px; 
+    }
   }
 
   &__block {
@@ -82,11 +100,21 @@
 
   &__text {
     width: 65%;
+
+    @media(max-width: $xs) {
+      width: 100%;
+    }
   }
 
   &__wrapper {
     width: 65%;
   }
 
+  img {
+
+    @media(max-width: $xs) {
+      display: none;
+    }
+  }
   
 }

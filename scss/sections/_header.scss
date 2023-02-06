@@ -6,13 +6,18 @@
   background-size: cover;
   height: 80vh;
   max-height: 663px;
+
+  @media (max-width: $sm) {
+    margin-top: 93px;
+    padding: 57px 0 80px;
+  }
   
 
 
   &__desc {
     color: $c-white;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 133%;
     position: relative;
     padding-left: 40px;
     margin-top: auto;
@@ -27,14 +32,30 @@
       left: 10px;
       z-index: 2;
     }
+
+    @media (max-width: $sm) {
+      font-size: 14px;
+    }
+
+    @media(max-width: $xs) {
+      font-size: 12px;
+    }
   }
 
   &__title {
     color: $c-white;
     font-weight: 700;
     font-size: 64px;
-    line-height: 82px; 
-    text-transform: uppercase; 
+    line-height: 128%; 
+    text-transform: uppercase;
+    
+    @media (max-width: $sm) {
+      font-size: 50px;
+    }
+
+    @media(max-width: $xs) {
+      font-size: 40px;
+    }
   }
 
   &__subtitle {
@@ -43,20 +64,39 @@
     font-size: 16px;
     line-height: 19px;
     text-transform: uppercase;
+
+    @media (max-width: $sm) {
+      font-size: 14px;
+    }
+
+    @media(max-width: $xs) {
+      font-size: 12px;
+    }
   }
 
   &__button {
     padding: 24px 64px;
-    background: $c-primary;
+    background-color: $c-primary;
     border-radius: 10px;
     color: #1C1D28;
     width: max-content;
     font-size: 16px;
     margin-bottom: 7px;
     text-transform: uppercase;
+    transition: background-color 300ms ease-in-out;
 
     &:hover {
-      background: #F2C79B;
+      background-color: #F2C79B;
+    }
+
+    @media (max-width: $sm) {
+      padding: 20px 50px;
+      font-size: 14px;
+    }
+
+    @media(max-width: $xs) {
+      padding: 15px 30px;
+      font-size: 12px;
     }
   }
 

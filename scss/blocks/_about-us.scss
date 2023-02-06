@@ -6,6 +6,14 @@
   background: #FFF5EB;
   position: relative;
 
+  @media (max-width:$md) {
+    padding: 60px;
+  }
+
+  @media (max-width: $sm) {
+    padding: 20px 20px 40px;
+  }
+
   &::after {
     content: "";
     background:#FFD2A4;
@@ -36,15 +44,23 @@
   &__title {
     font-weight: 700;
     font-size: 32px;
-    line-height: 44px;
+    line-height: 125%;
     color: #161722;
     margin-bottom: 8px;
     text-transform: uppercase;
+
+    @media(max-width: $xs) {
+      font-size: 21px;
+    }
   }
 
   &__intro {
     font-size: 16px;
     line-height: 24px;
+
+    @media(max-width: $xs) {
+      font-size: 14px;
+    }
   }
 
   

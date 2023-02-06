@@ -18,7 +18,10 @@
     text-transform: uppercase;
     color: #161722;
     margin-bottom: 16px;
-    
+
+    @media(max-width:$sm) {
+      font-size: 14px;
+    }
   }
 
   &__title {
@@ -27,5 +30,13 @@
     line-height: 64px;
     text-transform: uppercase;
     color: #161722;
+
+    @media(max-width:$sm) {
+      font-size: 40px;
+    }
+
+    @media(max-width: $xs) {
+      font-size: 35px;
+    }
   }
 }

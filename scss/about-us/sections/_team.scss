@@ -8,6 +8,10 @@
     text-transform: uppercase;
     color: #161722;
     text-align: center;
+
+    @media (max-width:$xs) {
+      font-size: 14px;
+    }
   }
 
   &__title {
@@ -18,10 +22,15 @@
     text-transform: uppercase;
     color: #161722;
     margin-bottom: 64px;
+
+    @media (max-width:$xs) {
+      font-size: 35px;
+    }
   }
 
   &__wrapper {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 }

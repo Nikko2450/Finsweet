@@ -17,9 +17,17 @@
     text-transform: uppercase;
     color: #161722;
     margin-bottom: 64px;
+
+    @media(max-width: $xs) {
+      font-size: 40px;
+    }
   }
 
   &__wrapper {
     display: flex;
+
+    @media(max-width: $xs) {
+      flex-wrap: wrap;
+    }
   }
 }

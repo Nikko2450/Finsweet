@@ -8,6 +8,10 @@
   text-transform: uppercase;
   overflow: hidden;
 
+  @media (max-width:$sm) {
+    padding: 20px 0;
+  }
+
   &__container {
     display: flex;
     align-items: center;
@@ -26,20 +30,36 @@
       &:not(:last-of-type) {
         margin-right: 48px;
       }
+
+      @media (max-width: $sm) {
+        &:not(:last-of-type) {
+          margin-right: 40px;
+        }
+      } 
     }
+
+    @media (max-width: $md) {
+      font-size: 16px;
+    }
+
   }
   
   &__button {
     padding: 20px 48px;
-    background: $c-primary;
+    background-color: $c-primary;
     border-radius: 10px;
     color: #1C1D28;
     width: max-content;
     font-size: 16px;
     margin-left: auto;
-
+    transition: background-color 300ms ease-in-out;
     &:hover {
-      background: #F2C79B;;
+      background-color: #F2C79B;;
+    }
+
+    @media (max-width: $sm) {
+      padding: 18px 38px;
+      font-size: 14px;
     }
   }
 
@@ -58,6 +78,12 @@
       opacity: 0.1;
       right: 0;
       top: -50px;
+    }
+
+    @media (max-width: $sm) {
+      padding-right: 40px;
+      margin-right: 40px;
+
     }
   }
 }

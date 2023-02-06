@@ -5,6 +5,22 @@
   background: #FFF5EB;
   position: relative;
   padding: 48px 32px;
+
+  @media(max-width: $xs) {
+    width: 45%;
+  }
+
+  @media (max-width:$md) {
+    padding: 40px 17px;
+
+    &:nth-child(1) {
+      margin-bottom: 24px;
+    }
+
+    &:nth-child(2) {
+      margin-bottom: 24px;
+    }
+  }
   
 
   
@@ -47,10 +63,18 @@
   &__title {
     font-weight: 700;
     font-size: 24px;
-    line-height: 28px;
+    line-height: 116%;
     text-transform: uppercase;
     color: #161722;
     margin-bottom: 16px;
+
+    @media (max-width:$sm) {
+     font-size: 16px; 
+    }
+
+    @media(max-width: $xs) {
+      font-size: 24px;
+    }
   }
 
   &__desc {
@@ -59,6 +83,14 @@
     color: #161722;
     opacity: 0.78;
     margin-bottom: 48px;
+
+    @media (max-width:$sm) {
+      font-size: 14px;
+    }
+
+    @media(max-width: $xs) {
+      font-size: 16px;
+    }
   }
 
   &__curator {
@@ -66,11 +98,27 @@
     line-height: 21px;
     color: #161722;
     margin-bottom: 4px;
+
+    @media (max-width:$sm) {
+     font-size: 14px; 
+    }
+
+    @media(max-width: $xs) {
+      font-size: 18px;
+    }
   }
 
   &__date {
     font-size: 16px;
     line-height: 24px;
     color: #161722;
+
+    @media (max-width:$sm) {
+     font-size: 13px; 
+    }
+
+    @media(max-width: $xs) {
+      font-size: 16px;
+    }
   }
 }

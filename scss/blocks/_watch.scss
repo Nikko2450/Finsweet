@@ -4,6 +4,14 @@
   width: 40%;
   position: relative;
 
+  @media (max-width: $sm) {
+    padding: 50px 35px;
+  }
+
+  @media(max-width: $xs) {
+    padding: 50px 20px;
+  }
+
   &__subtitle {
     font-weight: 700;
     font-size: 12px;
@@ -22,6 +30,10 @@
     line-height: 28px;
     color: #161722;
     margin-bottom: 16px;
+
+    @media(max-width: $xs) {
+      font-size: 21px;
+    }
   }
 
   &__desc {
@@ -30,6 +42,10 @@
     color: #161722;
     opacity: 0.78;
     margin-bottom: 32px;
+
+    @media(max-width: $xs) {
+      font-size: 14px;
+    }
   }
 
   &__place {
@@ -37,6 +53,10 @@
 
     &:not(:last-of-type) {
       margin-bottom: 16px;
+    }
+
+    @media(max-width: $xs) {
+      font-size: 13px;
     }
   }
 
@@ -53,15 +73,22 @@
     font-size: 16px;
     margin-bottom: 7px;
     text-transform: uppercase;
-    margin-top: 32px;
+    margin-top: 32px; 
+    transition: color 300ms ease-in-out;
 
     &:hover {
       color: #FFFFFF;
+    }
+
+    @media (max-width: $sm) {
+      padding: 20px 50px;
+      font-size: 14px;
     }
   }
 
   &__img {
     width: 60%;
+    object-fit: cover;
   }
 
   &__date {
@@ -79,6 +106,10 @@
     line-height: 28px;
     text-transform: uppercase;
     color: #161722;
+
+    @media(max-width: $xs) {
+      font-size: 20px;
+    }
   }
 
   &__month {
@@ -86,6 +117,10 @@
     line-height: 19px;
     text-transform: uppercase;
     color: #161722;
+
+    @media(max-width: $xs) {
+      font-size: 14px;
+    }
   }
 
 }

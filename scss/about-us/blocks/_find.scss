@@ -1,6 +1,11 @@
 .find {
   display: flex;
   align-items: center;
+
+  @media(max-width:$xs) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
   
   &:not(:last-of-type) {
     margin-bottom: 96px;
@@ -9,16 +14,29 @@
   &__title {
     font-weight: 700;
     font-size: 32px;
-    line-height: 44px;
+    line-height: 137%;
     text-transform: uppercase;
     color: #161722;
     margin-bottom: 16px;
+
+    @media(max-width:$sm) {
+      font-size: 18px;
+    }
+
+    @media(max-width:$xs) {
+      text-align: center;
+      font-size: 25px;
+    }
   }
 
   &__desc {
     font-size: 16px;
     line-height: 24px;
     color: rgba($c-black, 0.78);
+
+    @media(max-width:$sm) {
+      font-size: 14px;
+    }
   }
 
   &__text {
@@ -29,6 +47,20 @@
 
     &:nth-child(even) {
       padding-left: 48px;
+    }
+
+    @media(max-width:$xs) {
+      
+      &:nth-child(even) {
+        padding-left: 0;
+        padding-top: 20px;
+      }
+
+      &:nth-child(odd) {
+        padding-right: 0;
+        padding-bottom: 20px;
+      }
+
     }
   }
 }

@@ -19,5 +19,9 @@
     line-height: 64px;
     text-transform: uppercase;
     color: #232536;
+
+    @media (max-width: $xs) {
+      font-size: 40px;
+    }
   }
 }

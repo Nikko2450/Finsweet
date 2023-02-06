@@ -11,15 +11,27 @@
     text-transform: uppercase;
     color: #161722;
     margin-bottom: 16px;
+
+    @media(max-width:$sm) {
+      font-size: 14px;
+    }
   }
 
   &__title {
     font-weight: 700;
     font-size: 32px;
-    line-height: 44px;
+    line-height: 137%;
     text-transform: uppercase;
     color: #161722;
     margin-bottom: 16px;
+
+    @media(max-width:$sm) {
+      font-size: 24px;
+    }
+
+    @media (max-width:$xs) {
+      font-size: 18px;
+    }
   }
 
   &__desc {
@@ -27,5 +39,9 @@
     line-height: 24px;
     color: #161722;
     opacity: 0.78;
+
+    @media(max-width:$sm) {
+      font-size: 14px;
+    }
   }
 }
