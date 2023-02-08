@@ -35,12 +35,19 @@
     }
 
     &:nth-child(2) {
-      margin: 0 0 24px 0;
+      margin-bottom: 24px;
     }
   }
 
   @media (max-width: $xs) {
     padding: 70px 30px;
+    width: 100%;
+
+    &:not(:last-of-type) {
+      margin-right: 0;
+      margin-bottom: 24px;
+    }
+    
   }
 
 

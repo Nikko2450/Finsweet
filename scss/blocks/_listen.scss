@@ -6,21 +6,7 @@
   position: relative;
   padding: 48px 32px;
 
-  @media(max-width: $xs) {
-    width: 45%;
-  }
 
-  @media (max-width:$md) {
-    padding: 40px 17px;
-
-    &:nth-child(1) {
-      margin-bottom: 24px;
-    }
-
-    &:nth-child(2) {
-      margin-bottom: 24px;
-    }
-  }
   
 
   
@@ -44,6 +30,27 @@
   
   &:not(:last-of-type) {
     margin-right: 24px;
+  }
+
+  @media(max-width: $xs) {
+    width: 100%;
+
+    &:not(:last-of-type) {
+      margin-right: 0;
+      margin-bottom: 24px;
+    }
+  }
+
+  @media (max-width:$md) {
+    padding: 40px 17px;
+
+    &:nth-child(1) {
+      margin-bottom: 24px;
+    }
+
+    &:nth-child(2) {
+      margin-bottom: 24px;
+    }
   }
 
 

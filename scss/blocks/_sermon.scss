@@ -6,14 +6,27 @@
   overflow: hidden;
   $this: &;
 
+
   &:hover {
-    #{$this}__text {
-      transform:translateY(0)
+    @media (min-width: $md) {
+
+      #{$this}__text {
+        transform:translateY(0);
+      }
     }
   }
 
   &:not(:last-of-type) {
     margin-right: 24px;
+  }
+
+  @media (max-width :$xs) {
+    width: 100%;
+
+    &:not(:last-of-type) {
+      margin-right: 0;
+      margin-bottom: 24px;
+    }
   }
 
   &__text {
@@ -46,7 +59,9 @@
 
     @media (max-width: $sm) {
       padding: 10px;
+      transform: none;
     }
+
 
   }
 
@@ -61,18 +76,19 @@
       font-size: 17px;
     }
 
-    @media(max-width: $xs) {
-      font-size: 15px;
-    }
   }
 
   &__desc {
     font-size: 16px;
     line-height: 24px;
     color: #FFFFFF;
+  }
 
-    @media(max-width: $xs) {
-      display: none;
+  &__img {
+
+    @media (max-width: $xs) {
+      max-height: 290px;
+      object-fit: cover;
     }
   }
 }

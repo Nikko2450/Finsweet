@@ -16,6 +16,10 @@
     color: #1E1B1B;
     width: 100%;
     margin-bottom: 32px;
+
+    @media(max-width :$xs) {
+      font-size: 18px;
+    }
   }
 
   &__subtitle {
@@ -56,6 +60,10 @@
 
   &__info {
     width: 35%;
+
+    @media (max-width: $xs) {
+      width: 100%;
+    }
   }
 
 }
