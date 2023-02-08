@@ -4,6 +4,10 @@
   background-size: cover;
   height: 419px;
 
+  @media (max-width: $xs) {
+    margin-top: 77px;
+  }
+
   &__container {
     height: 100%;
     display: flex;

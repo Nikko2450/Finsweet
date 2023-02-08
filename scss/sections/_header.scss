@@ -11,6 +11,10 @@
     margin-top: 93px;
     padding: 57px 0 80px;
   }
+
+  @media (max-width: $xs) {
+    margin-top: 77px;
+  }
   
 
 
