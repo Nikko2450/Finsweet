@@ -1,6 +1,10 @@
 .relevant {
   padding: 128px 0;
 
+  @media(max-width: $xs) {
+    padding: 50px 0;
+  }
+
   &__container {
     display: flex;
     flex-wrap: wrap;
@@ -25,11 +29,11 @@
   &__title {
     font-weight: 700;
     font-size: 48px;
-    line-height: 64px;
+    line-height: 133%;
 
 
     @media(max-width: $xs) {
-      font-size: 24px;
+      font-size: 25px;
     }
   }
 

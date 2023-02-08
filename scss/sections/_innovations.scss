@@ -1,6 +1,10 @@
 .innovations {
   padding: 67px 0;
 
+  @media(max-width: $xs) {
+    padding: 25px 0;
+  }
+
   &__subtitle {
     text-align: center;
     font-size: 16px;
@@ -19,7 +23,8 @@
     margin-bottom: 64px;
 
     @media(max-width: $xs) {
-      font-size: 40px;
+      font-size: 25px;
+      margin-bottom: 30px;
     }
   }
 

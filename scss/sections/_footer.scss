@@ -2,6 +2,9 @@
   padding: 64px 0 72px;
   background: #161722;
 
+  @media(max-width: $xs) {
+    padding: 40px 0 40px;
+  }
 
   &__wrapper {
     display: flex;
@@ -33,6 +36,12 @@
     @media (max-width:$sm) {
       width: 25%;
     }
+
+    @media(max-width: $xs) {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 25px; 
+    }
   }
 
   &__icons {
@@ -62,6 +71,11 @@
      width: 100%; 
     }
 
+    @media(max-width: $xs) {
+      font-size: 25px;
+      margin-bottom: 16px;
+    }
+
   }
 
   &__button {
@@ -89,6 +103,7 @@
     @media(max-width: $xs) {
       padding: 22px 4px;
       font-size: 14px;
+      width: 100%;
     }
   }
 
@@ -127,6 +142,10 @@
         line-height: 24px;
         color: rgba($c-white, 0.8);
       }
+    }
+
+    @media (max-width: $xs) {
+      flex-wrap: wrap ;
     }
   }
 

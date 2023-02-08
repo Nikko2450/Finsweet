@@ -2,6 +2,10 @@
   padding: 128px 0;
   background-color: #F5F2F0;
 
+  @media(max-width: $xs) {
+    padding: 25px 0;
+  }
+
   &__wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -28,7 +32,8 @@
     text-transform: uppercase;
 
     @media(max-width: $xs) {
-      font-size: 30px;
+      font-size: 25px;
+      margin-bottom: 30px;
     }
   }
 }

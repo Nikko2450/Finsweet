@@ -1,6 +1,10 @@
 .join {
   padding: 97px 0 67px;
 
+  @media(max-width: $xs) {
+    padding: 25px 0 30px;
+  }
+
   &__subtitle {
     font-size: 16px;
     line-height: 19px;
@@ -19,6 +23,7 @@
 
     @media(max-width: $xs) {
       font-size: 25px;
+      margin-bottom: 30px;
     }
   }
 
@@ -33,6 +38,10 @@
     
     img {
       margin-left: 11px;
+    }
+
+    @media(max-width: $xs) {
+      margin-top: 20px;
     }
   }
 }

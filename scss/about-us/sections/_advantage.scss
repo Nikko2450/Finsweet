@@ -1,6 +1,11 @@
 .advantage {
  padding-bottom: 128px;
 
+  @media(max-width:$xs) {
+    padding-bottom: 64px;
+  }
+ 
+
   &__subtitle {
     font-size: 16px;
     line-height: 24px;
@@ -18,7 +23,8 @@
     margin-bottom: 64px;
 
     @media(max-width:$xs) {
-      font-size: 30px;
+      font-size: 25px;
+      margin-bottom: 32px;
     }
   }
 

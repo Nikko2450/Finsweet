@@ -1,6 +1,9 @@
 .love {
   padding: 128px 0 233px;
-  
+
+  @media(max-width: $xs) {
+    padding: 25px 0 25px;
+  }
 
   &__text {
     text-align: center;
@@ -23,7 +26,7 @@
     text-transform: uppercase;
 
     @media(max-width: $xs) {
-      font-size: 30px;
+      font-size: 25px;
     }
 
   }

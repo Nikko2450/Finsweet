@@ -1,6 +1,9 @@
 .team {
   padding-bottom: 128px;
 
+  @media(max-width:$xs) {
+    padding-bottom: 64px;
+  }
 
   &__subtitle {
     font-size: 16px;
@@ -17,14 +20,15 @@
   &__title {
     font-weight: 700;
     font-size: 48px;
-    line-height: 64px;
+    line-height: 133%;
     text-align: center;
     text-transform: uppercase;
     color: #161722;
     margin-bottom: 64px;
 
     @media (max-width:$xs) {
-      font-size: 21px;
+      font-size: 25px;
+      margin-bottom: 32px;
     }
   }
 
