@@ -4,8 +4,12 @@
   background-size: cover;
   height: 419px;
 
+  @media (max-width: $sm) {
+    margin-top: 93px;
+  }
+  
   @media (max-width: $xs) {
-    margin-top: 77px;
+    margin-top: 75px;
   }
 
   &__container {

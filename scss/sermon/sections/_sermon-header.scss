@@ -1,8 +1,16 @@
 .sermon-header {
-  margin-top: 80px;
+  margin-top: 119px;
   padding: 160px 0;
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (max-width: $sm) {
+    margin-top: 93px;
+  }
+  
+  @media (max-width: $xs) {
+    margin-top: 75px;
+  }
 
   &__subtitle {
     font-weight: 700;

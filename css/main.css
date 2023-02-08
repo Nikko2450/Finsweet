@@ -647,7 +647,7 @@ ul, ol {
 }
 @media (max-width: 576px) {
   .header {
-    margin-top: 77px;
+    margin-top: 75px;
   }
 }
 .header__desc {
@@ -1286,9 +1286,14 @@ ul, ol {
   background-size: cover;
   height: 419px;
 }
+@media (max-width: 768px) {
+  .page-header {
+    margin-top: 93px;
+  }
+}
 @media (max-width: 576px) {
   .page-header {
-    margin-top: 77px;
+    margin-top: 75px;
   }
 }
 .page-header__container {
@@ -1509,17 +1514,24 @@ ul, ol {
   padding-left: 48px;
 }
 @media (max-width: 576px) {
+  .find__text {
+    order: -1;
+    margin-bottom: 24px;
+  }
   .find__text:nth-child(even) {
     padding-left: 0;
-    padding-top: 20px;
   }
   .find__text:nth-child(odd) {
     padding-right: 0;
-    padding-bottom: 20px;
   }
 }
 .find img {
   width: 50%;
+}
+@media (max-width: 576px) {
+  .find img {
+    width: 100%;
+  }
 }
 
 .hero {
@@ -1595,10 +1607,20 @@ ul, ol {
 }
 
 .sermon-header {
-  margin-top: 80px;
+  margin-top: 119px;
   padding: 160px 0;
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media (max-width: 768px) {
+  .sermon-header {
+    margin-top: 93px;
+  }
+}
+@media (max-width: 576px) {
+  .sermon-header {
+    margin-top: 75px;
+  }
 }
 .sermon-header__subtitle {
   font-weight: 700;
@@ -1749,10 +1771,20 @@ ul, ol {
 }
 
 .contact-header {
-  margin-top: 80px;
+  margin-top: 119px;
   padding: 160px 0;
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media (max-width: 768px) {
+  .contact-header {
+    margin-top: 93px;
+  }
+}
+@media (max-width: 576px) {
+  .contact-header {
+    margin-top: 75px;
+  }
 }
 .contact-header__subtitle {
   font-size: 16px;
