@@ -31,7 +31,7 @@
   &__wrapper {
     display: flex;
 
-    @media(max-width: $xs) {
+    @media(max-width: $md) {
       flex-wrap: wrap;
     }
   }

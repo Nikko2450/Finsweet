@@ -51,6 +51,10 @@
         margin-right: 32px;
       }
     }
+
+    @media (max-width: $xs) {
+      justify-content: center;
+    }
   }
 
 
@@ -64,10 +68,15 @@
 
 
   &__info {
-    width: 35%;
+    width: 37%;
+
+
+    @media (max-width: $sm) {
+      width: 100%;
+    }
 
     @media (max-width: $xs) {
-      width: 100%;
+      text-align: center;
     }
   }
 

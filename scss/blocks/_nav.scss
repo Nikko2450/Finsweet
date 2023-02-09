@@ -27,19 +27,6 @@
     color: $c-white;
     position: relative;
 
-    a {
-
-      &:not(:last-of-type) {
-        margin-right: 48px;
-      }
-
-      @media (max-width: $sm) {
-        &:not(:last-of-type) {
-          margin-right: 0;
-        }
-      } 
-    }
-
     @media (max-width: $md) {
       font-size: 16px;
     }
@@ -64,7 +51,26 @@
     @media (max-width: $xs) {
       top: 77px;
     }
+  }
 
+  &__link {
+
+    &:not(:last-of-type) {
+      margin-right: 48px;
+    }
+
+    @media (max-width: $md) {
+      &:not(:last-of-type) {
+        margin-right: 40px;
+      }
+    }
+
+    @media (max-width: $sm) {
+      padding: 20px;
+      &:not(:last-of-type) {
+        margin-right: 0;
+      }
+    } 
   }
   
   &__button {
@@ -78,6 +84,10 @@
     transition: background-color 300ms ease-in-out;
     &:hover {
       background-color: #F2C79B;;
+    }
+
+    @media (max-width: $md) {
+      padding: 20px;
     }
 
     @media (max-width: $sm) {

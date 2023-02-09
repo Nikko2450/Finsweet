@@ -6,7 +6,7 @@
   overflow: hidden;
   $this: &;
 
-
+  
   &:hover {
     @media (min-width: $md) {
 
@@ -19,6 +19,20 @@
   &:not(:last-of-type) {
     margin-right: 24px;
   }
+
+  @media (max-width: $md) {
+    flex-wrap: wrap;
+    width: calc(100% / 2 - 24px / 2);
+
+    &:nth-child(even) {
+      margin-right: 0;
+    }
+
+    &:nth-child(-n + 2) {
+      margin-bottom: 24px; 
+    }
+  }
+
 
   @media (max-width :$xs) {
     width: 100%;
@@ -55,11 +69,11 @@
 
     @media (max-width:$md) {
       padding: 27px;
+      transform: none;
     }
 
     @media (max-width: $sm) {
       padding: 10px;
-      transform: none;
     }
 
 
@@ -70,7 +84,7 @@
     color: #FFFFFF;
     font-size: 24px;
     line-height: 116%;
-    margin-bottom: 16px;
+    margin-bottom: 32px;
 
     @media (max-width: $sm) {
       font-size: 17px;
@@ -82,13 +96,20 @@
     font-size: 16px;
     line-height: 24px;
     color: #FFFFFF;
+
+    @media (max-width: $lg) {
+      font-size: 13px;
+    }
   }
 
   &__img {
 
+    @media (max-width: $md) {
+      object-fit: cover;
+    }
+
     @media (max-width: $xs) {
       max-height: 290px;
-      object-fit: cover;
     }
   }
 }

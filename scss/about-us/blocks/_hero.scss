@@ -7,14 +7,23 @@
     margin-right: 24px;
   }
   
-  @media (max-width: $sm) {
-    width: 48%;
+  @media (max-width: $md) {
+    width: calc(100% / 2 - 24px / 2);
     
     &:not(:last-of-type) {
       margin-right: 0;
     }
 
-    &:nth-child(2), &:nth-child(1)  {
+    &:nth-child(-n + 2)  {
+      margin-bottom: 24px;
+    }
+  }
+
+
+  @media (max-width: $xs) {
+    width: 100%;
+
+    &:not(:last-of-type) {
       margin-bottom: 24px;
     }
   }

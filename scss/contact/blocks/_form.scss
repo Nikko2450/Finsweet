@@ -1,7 +1,9 @@
 .form {
   width: 55%;
 
-  @media (max-width: $xs) {
+
+
+  @media (max-width: $sm) {
     width: 100%;
     margin-bottom: 24px;
   }
@@ -25,12 +27,11 @@
       line-height: 24px;
       color: #161722;
     }
-
-
   }
 
   textarea {
     resize: none;
+    font-family: "Roboto Condensed", sans-serif;
   }
 
   &__button {
@@ -43,6 +44,7 @@
     border: 0;
     display: block;
     cursor: pointer;
+    text-transform: uppercase;
 
     &:hover {
       background: #F2C79B;

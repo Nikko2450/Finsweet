@@ -10,8 +10,12 @@
     display: flex;
     justify-content: space-between;
 
-    @media(max-width: $xs) {
+    @media(max-width: $md) {
       flex-wrap: wrap;
+    }
+
+    @media (max-width: $xs) {
+      justify-content: space-around;
     }
   }
 
@@ -152,7 +156,7 @@
   &__registration {
     width: 44%;
 
-    @media(max-width: $xs) {
+    @media(max-width: $md) {
       width: 100%;
       margin-top: 24px;
     }

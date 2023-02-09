@@ -51,11 +51,11 @@
     margin-bottom: 16px;
 
     @media (max-width:$md) {
-      font-size: 45px;
+      font-size: 38px;
     }
 
     @media (max-width:$sm) {
-      font-size: 25px;
+      font-size: 35px;
     }
   }
 
@@ -105,7 +105,7 @@
   &__text {
     width: 65%;
 
-    @media(max-width: $xs) {
+    @media(max-width: $sm) {
       width: 100%;
     }
   }
@@ -120,7 +120,7 @@
 
   img {
 
-    @media(max-width: $xs) {
+    @media(max-width: $sm) {
       display: none;
     }
   }

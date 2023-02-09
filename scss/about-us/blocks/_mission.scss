@@ -5,6 +5,10 @@
     margin-right: 25px;
   }
 
+  @media (max-width: $sm) {
+    width: 40%;
+  }
+
   @media(max-width: $xs) {
     width: 100%;
     text-align: center;

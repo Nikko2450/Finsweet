@@ -27,15 +27,17 @@
 
   @media (max-width: $sm) {
     padding: 20px 20px 40px;
-  }
 
-  @media (max-width :$xs) {
     width: 100%;
     
     &:not(:last-of-type) {
       margin-right: 0;
       margin-bottom: 24px;
     }
+  }
+
+  @media (max-width :$xs) {
+    
   }
 
 
